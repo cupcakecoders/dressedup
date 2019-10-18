@@ -1,3 +1,8 @@
 <h1>Welcome#index</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
 <h2>Hello world!</h2>
+<%= debug @photos %>
+<% @url_array.each do |image| %>
+    <img src="<%=image%>">
+<% end %>
+
